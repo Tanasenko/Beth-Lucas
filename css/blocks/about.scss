@@ -1,0 +1,151 @@
+$main-blu: #536073;
+
+.about {
+  margin-bottom: 150px;
+}
+
+.container__about {
+  width: 95%;
+  max-width: 1262px;
+  margin: 0 auto;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 548px;
+  margin-right: 50px;
+}
+
+.about__title {
+  font-family: "Trajan Pro 3";
+  font-size: 60px;
+  color: $main-blu;
+  line-height: 1.353;
+  margin-bottom: 100px;
+}
+
+.about__text {
+  color: #626262;
+  max-width: 548px;
+}
+
+.about__img {
+  max-width: 615px;
+  max-height: 592px;
+}
+
+.about__photo {
+  width: 100%;
+  height: auto;
+}
+
+.about__btn {
+  width: 100%;
+  display: none;
+}
+
+.about__mini {
+  display: none;
+  position: relative;
+  background: #efefef;
+  top: 10%;
+  left: 0;
+  height: 676px;
+  padding: 20px 10px;
+}
+
+.mini__wrapper {
+  background: #fff;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 30px 20px 25px 20px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.mini__title {
+  font: "Trajan Pro 3";
+  font-size: 24px;
+  color: $main-blu;
+  margin-bottom: 20px;
+}
+
+.mini__text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.close__btn {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: $main-blu;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: $main-blu;
+    transform: translate(0%, -100%) rotate(135deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .about__title {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__info {
+    margin-right: 0;
+  }
+
+  .about__title {
+    font-size: 32px;
+  }
+
+  .about__text {
+    display: none;
+  }
+
+  .about__img {
+    margin-bottom: 20px;
+  }
+
+  .about__btn {
+    display: block;
+  }
+}
+
+@media (max-width: 460px) {
+  .about {
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,56 @@
+$main-blu: #536073;
+
+.contact {
+  background: $main-blu;
+  padding-top: 120px;
+}
+
+.contact__conatiner {
+  width: 95%;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+
+  form {
+    width: 100%;
+  }
+}
+
+.contact__title {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.contact__name,
+.contact__phone {
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  height: 50px;
+  padding: 13px 18px;
+
+  &::placeholder {
+    color: #fff;
+    opacity: 0.7;
+  }
+}
+.contact__name {
+  margin-bottom: 20px;
+}
+
+.contact__phone {
+  margin-bottom: 26px;
+}
+
+.form__button {
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .contact__conatiner {
+    margin-bottom: 60px;
+  }
+}

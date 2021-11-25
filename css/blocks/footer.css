@@ -1,0 +1,137 @@
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 95%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.footer__menu {
+  margin-left: 90px;
+}
+.footer__menu .menu__link {
+  color: #fff;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: end;
+}
+
+.contacts__list {
+  margin-bottom: 33px;
+}
+
+.contacts__item {
+  font-size: 13px;
+  color: #a9afb9;
+  margin-bottom: 10px;
+}
+
+.contact__mail,
+.contact__tel {
+  text-decoration: none;
+}
+.contact__mail span,
+.contact__tel span {
+  text-decoration: underline;
+}
+
+.footer__social {
+  margin-left: 0;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 60px;
+}
+.footer__social .social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.footer__social .social__item {
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+.footer__social .social__item:last-child {
+  margin-right: 0;
+}
+
+.boofer,
+.footer__menu,
+.contacts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.footer__label {
+  display: none;
+  width: 35%;
+  margin-bottom: 56px;
+}
+
+.label {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .boofer {
+    display: none;
+  }
+
+  .logo__footer {
+    margin-bottom: 35px;
+  }
+
+  .contacts {
+    text-align: center;
+  }
+
+  .footer__social {
+    display: block;
+    margin-bottom: 56px;
+  }
+  .footer__social .social__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__social .social__item {
+    margin-right: 50px;
+  }
+  .footer__social .social__item:last-child {
+    margin-right: 0;
+  }
+
+  .footer__label {
+    display: block;
+  }
+}
